@@ -1,36 +1,35 @@
 ﻿
-Console.WriteLine("Введите первое число:");
+Console.Write("Введите первое число для сравнения:");
 string firstString = Console.ReadLine();
 int a = Convert.ToInt32(firstString);
 
-Console.WriteLine("Введите второе  число:");
+Console.Write("Введите второе  число для сравнения:");
 string secondString = Console.ReadLine();
 int b = Convert.ToInt32(secondString);
 
-Console.WriteLine("Введите третье число:");
+Console.Write("Введите третье число для сравнения:");
 string thirdString = Console.ReadLine();
 int c = Convert.ToInt32(thirdString);
 int max;
   if (a > b )
   {
     max = a;
+    
   }        
   else
   {    
     max = b;
+    
   }
   if (c > max)
   {
     max = c;
-    Console.Write(max + " = самое большое из ");
-    Console.Write(a + ";" + b + ";" + c + ";");
+        
   }
-  else
-  {
-    Console.Write(max + " = самое большое из ");
-    Console.Write(a + ";" + b + ";" + c + ";");
-  }
- 
+  
+
+Console.Write("Число " + max + " самое большое из чисел ");
+Console.Write(a + ";" + b + ";" + c + ";");
   
   
     
